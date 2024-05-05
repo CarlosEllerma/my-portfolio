@@ -10,16 +10,20 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const NavBar = () => {
   const { setTheme } = useTheme();
 
   return (
-    <header className="flex justify-between bg-secondary py-2 sticky top-0 shadow-md z-50">
-      <div className="felx font-serif text-xl pt-2 pl-5">
-        <p>PORTFOLIO</p>
+    <header className="flex justify-between bg-secondary py-2 sticky top-0 ">
+      <div className="felx  pt-2 pl-7">
+        <Avatar>
+          <AvatarImage src="Carlos_with_gekko.png" alt="@Carlos_with_gekko" />
+          <AvatarFallback>CN</AvatarFallback>
+        </Avatar>
       </div>
-      <div className="flex pr-5 gap-5 font-serif">
+      <div className="flex pr-5 gap-5 font-mono">
         <Link href={NavItems.Home}>
           <Button variant="ghost">Home</Button>
         </Link>
@@ -31,7 +35,7 @@ const NavBar = () => {
         </Link>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" size="icon">
+            <Button variant="ghost" size="icon">
               <IoSunny className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <IoMoon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               <span className="sr-only">Toggle theme</span>
