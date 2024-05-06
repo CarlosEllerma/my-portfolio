@@ -12,7 +12,11 @@ import { Car } from "lucide-react";
 
 const About = () => {
   return (
-    <div className="grid items-center justify center delay-300">
+    <div className="grid items-center justify center">
+      <div className="flex justify-center pb-6">
+        <p className="text-6xl font-mono">About Me</p>
+      </div>
+      <div>
       <VerticalTimeline lineColor="grey">
         <VerticalTimelineElement
           className="vertical-timeline-element--school"
@@ -84,6 +88,7 @@ const About = () => {
           <img src="https://via.placeholder.com/150" alt="placeholder" />
         </VerticalTimelineElement>
       </VerticalTimeline>
+      </div>
 
       {/* Skills */}
       <div>

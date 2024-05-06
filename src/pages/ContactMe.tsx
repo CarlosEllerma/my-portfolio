@@ -21,51 +21,19 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/breadcrumbs";
 import { NavItems } from "@/pages/constants/NavItems";
 
 const ContactMe = () => {
   return (
-    <div className="flex flex-col justify-center pt-5 pl-[6em]">
-      <div className="flex justify-center text-xl font-serif pb-6">
-        <Breadcrumbs>
-          <BreadcrumbItem className="underline" href={NavItems.Home}>Home</BreadcrumbItem>
-          <BreadcrumbItem className="underline" href={NavItems.Contact}>Contact</BreadcrumbItem>
-        </Breadcrumbs>
-      </div>
-      <div className="flex grid-cols-2 gap-10">
-        <div className="">
-          <Card className="font-serif h-[600px] w-[40em]">
+    <div className="flex grid-cols-2 gap-20 justify-center pt-20 p-10">
+      {/* Skills */}
+        <div>
+          <Card className="font-mono h-[510px] w-[40em]">
             <CardHeader>
               <CardTitle>Let's keep in touch</CardTitle>
               <CardDescription>
                 I am open for suggestion or just to have a chat
               </CardDescription>
-              <div className="grid grid-cols-3 justify-center pt-3">
-                <div>
-                  <CardTitle>Address:</CardTitle>
-                  <CardDescription>
-                    Mabini Extension, Cabanatuan City, Nueva Ecija
-                  </CardDescription>
-                </div>
-                <div className="pl-2">
-                  <CardTitle>Email:</CardTitle>
-                  <CardDescription>carlosm.ellerma@gmail.com</CardDescription>
-                </div>
-                <div className="">
-                  <CardTitle>Phone #:</CardTitle>
-
-                  <HoverCard>
-                    <CardDescription>
-                      <HoverCardTrigger className="underline">
-                        +63 962 114 6369
-                      </HoverCardTrigger>
-                    </CardDescription>
-
-                    <HoverCardContent>Smart Cellular Network</HoverCardContent>
-                  </HoverCard>
-                </div>
-              </div>
             </CardHeader>
             <CardContent>
               <form>
@@ -93,16 +61,16 @@ const ContactMe = () => {
             </CardContent>
             <CardFooter className="flex justify-between">
               <Button variant="outline">Cancel</Button>
-              <Button>Submit</Button>
+              <Button variant={"outline"}>Submit</Button>
             </CardFooter>
           </Card>
         </div>
 
         <div>
-          <Card className="font-serif">
+          <Card className="h-[440px] w-[40em]">
             <CardHeader>
               <CardTitle>
-                <p className="font-serif pb-5">Social Media Profiles</p>
+                <p className="font-mono ml-7 pb-5">Social Media Profiles</p>
               </CardTitle>
               <CardContent>
                 <div className="grid gap-4">
@@ -183,7 +151,6 @@ const ContactMe = () => {
             </CardHeader>
           </Card>
         </div>
-      </div>
     </div>
   );
 };
