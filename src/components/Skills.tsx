@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Csslogo from "../../public/logos/csslogo.png";
-import Htmllogo from "../../public/logos/htmllogo.png";
-import Jslogo from "../../public/logos/jslogo.png";
-import Reactlogo from "../../public/logos/reactlogo.png";
-import Nextlogo from "../../public/logos/nextjslogo.png";
-import Mysql from "../../public/logos/sqllogo.png";
+import Csslogo from "../../public/logos/css.png";
+import Htmllogo from "../../public/logos/html.png";
+import Jslogo from "../../public/logos/javascript.png";
+import Reactlogo from "../../public/logos/react.png";
+import Nextlogo from "../../public/logos/nextjs.png";
+import Mysql from "../../public/logos/sql.png";
+import profile2 from "../../public/profile2.png";
 import { Card, CardContent } from "./ui/Card";
 import {
   Carousel,
@@ -24,11 +25,11 @@ const Skills = () => {
 
       <div className="flex grid-cols-2 gap-20 p-20 justify-center">
         <div>
-          <Image src={Csslogo} alt="CSS" height={500} width={500} />
+          <Image src={profile2} alt="profile2" className="rounded-full" height={500} width={500} />
         </div>
 
         <div>
-          <div className="pl-32 pt-28">
+          <div className="pl-32 pt-40">
             <Carousel
               opts={{
                 align: "start",
