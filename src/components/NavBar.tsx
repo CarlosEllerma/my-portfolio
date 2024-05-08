@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { NavItems } from "@/pages/constants/NavItems";
+import { NavItems } from "../components/NavItems";
 import { IoMoon, IoSunny } from "react-icons/io5";
 import { useTheme } from "next-themes";
 import {

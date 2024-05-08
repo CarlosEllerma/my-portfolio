@@ -21,7 +21,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import { NavItems } from "@/pages/constants/NavItems";
+import { NavItems } from "../components/NavItems";
 
 const ContactMe = () => {
   return (
@@ -30,7 +30,7 @@ const ContactMe = () => {
         <div>
           <Card className="font-mono h-[510px] w-[40em]">
             <CardHeader>
-              <CardTitle>Let's keep in touch</CardTitle>
+              <CardTitle>Lets keep in touch</CardTitle>
               <CardDescription>
                 I am open for suggestion or just to have a chat
               </CardDescription>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Layout from "../components/ui/Layout";
 import profile from "../../public/profile.png";
 import { Button } from "../components/ui/button";
-import { NavItems } from "./constants/NavItems";
+import { NavItems } from "../components/NavItems";
 import ContactMe from "@/pages/ContactMe";
 import About from "@/pages/About";
 
